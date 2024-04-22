@@ -24,7 +24,7 @@ async function checkWeather(city){
 
 
    if(data.weather[0].main == "Clouds"){
-    weatherIcon.src = "images/clouds.png"
+    weatherIcon.src = "https://github.com/MahvishFatimaa/Weather-App/blob/main/clouds.png?raw=true"
    }
    else if(data.weather[0].main =="Clear"){
     weatherIcon.src = "https://github.com/MahvishFatimaa/Weather-App/blob/main/clear.png?raw=true"
