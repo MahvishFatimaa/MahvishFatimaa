@@ -51,11 +51,12 @@ body{
    
 }
 .icon{
-    width: 170px;
+    max-width: 100%;
     margin-top: 30px;
+    height: auto;
 }
 .weather h1{
-    font-size: 80px;
+    font-size: 8vw;
     font-weight: 500;
 
 }
@@ -75,6 +76,8 @@ body{
     display: flex;
     align-items: center;
     text-align: left;
+    max-width: 100%;
+    height: auto;
 }
 .col img{
     width: 40px;
@@ -93,4 +96,48 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .weather h1 {
+        font-size: 60px;
+    }
+    .weather h2 {
+        font-size: 34px;
+    }
+    .col img {
+        width: 30px;
+        margin-left: 20%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .card {
+        padding: 20px;
+    }
+    .search input, .search button {
+        height: 50px;
+    }
+    .search input {
+        padding: 10px 15px;
+    }
+    .weather h1 {
+        font-size: 50px;
+    }
+    .weather h2 {
+        font-size: 28px;
+    }
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .col {
+        margin-bottom: 10px;
+        margin-left:23% ;
+        
+    }
+    
+    
 }
